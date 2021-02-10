@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="signUpActivity"
+            type="com.otpl.newcreate.ui.SignUpActivity"/>
+
+        <variable
+            name="toolbarTitle"
+            type="String" />
+
+        <variable
+            name="signUpModel"
+            type="com.otpl.newcreate.data.model.local.SignUpModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.base.BaseActivity"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="@{toolbarTitle}"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/white">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/view_form"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scrollbars="none"
+                android:fillViewport="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:src="@mipmap/ic_logo"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:layout_gravity="center"/>
+
+                                       <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/fullNameInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_9sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fullNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="@string/prompt_full_name"
+                            android:text="@={signUpModel.fullName}"
+                            android:textColor="@color/black_900"
+                            android:textSize="@dimen/_12sdp"
+                            android:inputType="textPersonName"
+                            android:imeOptions="actionNext"
+                            android:textAppearance="@style/Widget.AppCompat.EditText"
+                            android:fontFamily="@font/poppins_regular"
+                            android:selectAllOnFocus="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/fatherNameInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginBottom="@dimen/_9sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fatherNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="@string/prompt_father_name"
+                            android:text="@={signUpModel.fatherName}"
+                            android:textColor="@color/black_900"
+                            android:textSize="@dimen/_12sdp"
+                            android:inputType="textPersonName"
+                            android:imeOptions="actionNext"
+                            android:textAppearance="@style/Widget.AppCompat.EditText"
+                            android:fontFamily="@font/poppins_regular"
+                            android:selectAllOnFocus="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/mobileNumberInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginBottom="@dimen/_9sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/mobileNumberEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="@string/prompt_mobile_number"
+                            android:text="@={signUpModel.mobileNumber}"
+                            android:textColor="@color/black_900"
+                            android:textSize="@dimen/_12sdp"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:digits="1234567890"
+                            android:imeOptions="actionDone"
+                            android:textAppearance="@style/Widget.AppCompat.EditText"
+                            android:fontFamily="@font/poppins_regular"
+                            android:selectAllOnFocus="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/districtSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginBottom="@dimen/_9sdp"
+                        android:background="@drawable/bg_edit_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/passwordInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="@string/prompt_password"
+                            android:text="@={signUpModel.password}"
+                            android:textAppearance="@style/Widget.AppCompat.EditText"
+                            android:textColor="@color/black_900"
+                            android:textSize="@dimen/_12sdp"
+                            android:inputType="textPassword"
+                            android:imeOptions="actionNext"
+                            android:fontFamily="@font/poppins_regular"
+                            android:selectAllOnFocus="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/confirmPasswordInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/confirmPasswordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="पासवर्ड पुनः भरें"
+                            android:textAppearance="@style/Widget.AppCompat.EditText"
+                            android:textColor="@color/black_900"
+                            android:textSize="@dimen/_12sdp"
+                            android:inputType="textPassword"
+                            android:imeOptions="actionDone"
+                            android:fontFamily="@font/poppins_regular"
+                            android:selectAllOnFocus="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_24sdp"
+                        android:layout_marginBottom="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:text="@string/action_sign_up"
+                        style="@style/ButtonStyle"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_13sdp"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:onClick="@{signUpActivity::onClickSignUp}"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:text="@string/action_already_member_sign_in"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:onClick="@{signUpActivity::onClickSignIn}"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                style="?android:attr/progressBarStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

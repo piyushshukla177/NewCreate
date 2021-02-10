@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">AABHA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_home">डैशबोर्ड</string>
+
+    <string name="menu_for_skills">सीखो, बढ़ो हुनर के साथ</string>
+    <string name="menu_services">सरकारी सेवाएँ/लाभ</string>
+    <string name="menu_videos">वीडियो</string>
+    <string name="menu_skills">कौशल अंकन</string>
+    <string name="menu_profile">प्रोफ़ाइल</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string name="title_for_skill">सीखो, बढ़ो हुनर के साथ</string>
+    <string name="title_services">सरकारी सेवाएँ/लाभ</string>
+    <string name="title_videos">वीडियो</string>
+    <string name="title_skills">कौशल अंकन</string>
+    <string name="title_profile">प्रोफ़ाइल</string>
+
+    <!--App Message-->
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="something_wrong">Something went wrong!\nPlease try again.</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">You have lost connection to the Internet. This app is offline.</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_password">पासवर्ड न्यूनतम 06 वर्णों का होना चाहिए</string>
+    <string name="error_confirm_password_required">कृपया पासवर्ड पुनः भरें।</string>
+    <string name="error_psd_cnfm_psd_mismatching">पासवर्ड तथा पुनः भरा गया पासवर्ड एक समान होना चाहिए</string>
+    <string name="error_otp_required">कृपया ओटीपी भरें।</string>
+    <string name="error_dob_required">कृपया जन्मतिथि का चयन करें।</string>
+    <string name="error_address_required">कृपया स्थायी पता भरें।</string>
+    <string name="error_qualification_required">कृपया अपनी योग्यता भरें।</string>
+    <string name="error_skill_required">कृपया अपना कौशल भरें।</string>
+    <string name="error_aadhar_required">कृपया आधार कार्ड नंबर भरें।</string>
+    <string name="error_number_required">कृपया मोबाइल नंबर भरें।</string>
+    <string name="error_name_required">कृपया पूरा नाम भरें।</string>
+    <string name="error_father_name_required">कृपया पिता का नाम भरें।</string>
+    <string name="error_new_psd_new_cnfm_psd_mismatching">नया पासवर्ड तथा पुनः भरा गया नया पासवर्ड एक समान होना चाहिए</string>
+    <string name="error_password_required">कृपया पासवर्ड भरें।</string>
+    <string name="error_new_password_required">कृपया नया पासवर्ड भरें।</string>
+    <string name="msg_no_internet">इंटरनेट कनेक्शन नहीं है।</string>
+    <string name="msg_not_detected_internet">यह ऐप ऑफलाइन है। इंटरनेट कनेक्शन नहीं है। कृपया अपना इंटरनेट कनेक्शन देखें व पुनः प्रयास करें।</string>
+    <string name="label_retry">पुनः प्रयास करें</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="action_allow">अनुमति दें</string>
+    <string name="allow_storage_permission">स्टोरेज एक्सेस की अनुमति दें</string>
+    <string name="msg_storage_permission_denied_explanation">आपके उपकरण की फोटो को एक्सेस करने हेतु स्टोरेज अनुमति चाहिए। यदि आप अनुमति नहीं देते हैं तो आप ऐप पर फोटो नहीं देख पाएंगे। क्या आप स्टोरेज एक्सेस हेतु अनुमति प्रदान करना चाहेंगे?</string>
+    <string name="go_to_settings_give_permissions">ऐप को आपकी स्टोरेज को एक्सेस करने हेतु अनुमति चाहिए।
+        इन फीचर का प्रयोग करने हेतु अपनी सेटिंग में जाएं एवं अनुमति प्रदान करें।</string>
+    <string name="need_permission">अनुमति अपेक्षित</string>
+    <string name="goto_settings">सेटिंग में जाएं</string>
+    <string name="action_cancel">निरस्त करें</string>
+    <string name="msg_no_records_found">कोई रिकॉर्ड नहीं मिला!</string>
+    <string name="action_show_more">Show More</string>
+
+    <!--Error Dialog-->
+    <string name="label_error">Error</string>
+    <string name="action_try_again">Try Again</string>
+
+    <!--Success Dialog-->
+    <string name="label_success">Success</string>
+    <string name="msg_sign_up_success">Congratulations! Your account has been created successfully.
+        You can now login.</string>
+    <string name="action_continue">OK</string>
+
+    <!--Logout Dialog-->
+    <string name="action_dialog_yes">हां</string>
+    <string name="action_dialog_no">नहीं</string>
+    <string name="msg_dialog_logout">क्या आप लॉग आउट करना चाहते हैं?</string>
+
+    <!--Review Dialog-->
+    <string name="heading_thank_you">Thank You</string>
+    <string name="action_done">Done</string>
+    <string name="dialog_action_ok">ओके</string>
+
+    <!--Login Activity-->
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_user_id">User Id</string>
+    <string name="prompt_mobile_number">मोबाइल नंबर</string>
+    <string name="prompt_registered_mobile_number">पंजीकृत मोबाइल नंबर</string>
+    <string name="prompt_password">पासवर्ड</string>
+    <string name="action_forgot_password">पासवर्ड भूल गए?</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_login">लॉगिन</string>
+    <string name="action_create_new_account">नया एकाउंट सृजित करें</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"आपका स्वागत है, "</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must contain an upper case, a numeric char, and a special char.</string>
+    <string name="error_password_mismatching"><![CDATA[New & confirm password are mismatching]]></string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_login_now">नमस्ते !</string>
+    <string name="error_registered_phone_required">कृपया पंजीकृत मोबाइल नंबर भरें।</string>
+    <string name="error_invalid_phone">कृपया 10 अंकों का मोबाइल नंबर भरें।</string>
+    <string name="error_invalid_aadhar">कृपया वैध आधार कार्ड नंबर भरें।</string>
+    <string name="error_invalid_otp">कृपया 6 अंकों का ओटीपी भरें।</string>
+
+    <string name="msg_login">आपका स्वागत है! कृपया आगे बढ़ने हेतु लॉगिन करें।</string>
+    <string name="label_enter_via_social_networks">Enter via social networks</string>
+    <string name="label_login_with_email">or login with email</string>
+    <string name="label_don_t_have_an_account">Don\'t have an account?</string>
+    <string name="error_credentials">"Please give your inputs."</string>
+    <string name="msg_user_not_exist">You\'re not an authorized user.
+        Please sign up to continue in this application.</string>
+    <string name="msg_you_dont_have_access">You don\'t have currently access to this app.
+        Please contact your account administrator for access.</string>
+    <string name="title_not_authorized">Not Authorized</string>
+    <string name="prompt_full_name">पूरा नाम</string>
+    <string name="prompt_father_name">पिता का नाम</string>
+    <string name="action_sign_up">साइन अप करें</string>
+    <string name="action_already_member_sign_in">पंजीकृत उपयोक्ता लॉगिन हेतु क्लिक करें</string>
+    <string name="toolbar_title_sign_up">एकाउंट सृजित करें</string>
+    <string-array name="select_district_array">
+        <item>जनपद का चयन करें</item>
+    </string-array>
+    <string-array name="select_array">
+        <item>चयन करें</item>
+    </string-array>
+
+    <string name="service_1">मातृत्व, शिशु एवं बालिका मदद योजना</string>
+    <string name="service_2">सन्त रविदास शिक्षा सहायता योजना</string>
+    <string name="service_3">आवासीय विद्यालय योजना</string>
+    <string name="service_4">मेधावी छात्र पुरस्कार योजना</string>
+    <string name="service_5">कौशल विकास तकनीकी उन्नयन एवं प्रमाणन योजना</string>
+    <string name="service_6">निर्माण कामगार आवास सहायता योजना</string>
+    <string name="service_7">शौचालय सहायता योजना</string>
+    <string name="service_8">सौर ऊर्जा सहायता योजना</string>
+    <string name="service_9">कन्या विवाह सहायता योजना</string>
+    <string name="service_10">चिकित्सा सुविधा योजना</string>
+    <string name="service_11">कामगार गम्भीर बीमारी सहायता योजना</string>
+    <string name="service_12">प्रधानमंत्री जीवन ज्योति बीमा योजना</string>
+    <string name="service_13">प्रधानमंत्री सुरक्षा बीमा योजना</string>
+    <string name="service_14">महात्मा गांधी पेंशन योजना</string>
+    <string name="service_15">निर्माण कामगार मृत्यु, विकलांगता सहायता एवं अक्षमता पेंशन योजना</string>
+
+    <!--Otp Request Activity-->
+    <string name="title_sign_up">Sign Up</string>
+    <string name="msg_sign_up">Please sign up to enter in a app</string>
+    <string name="label_sign_up_with_email">sign up with email</string>
+    <string name="label_email_verification">मोबाइल नंबर सत्यापन</string>
+    <string name="msg_enter_email_for_verification">ओटीपी आधारित मोबाइल नंबर सत्यापन हेतु अपना पंजीकृत मोबाइल नंबर दर्ज करें।</string>
+    <string name="action_get_code">दर्ज करें</string>
+    <string name="label_already_have_an_account">Already have an account?</string>
+    <string name="prompt_otp">ओटीपी</string>
+    <string name="action_submit">दर्ज करें</string>
+    <string name="msg">आपकी जानकारी सफलतापूर्वक दर्ज कर दी गई है। कृपया होम क्वॉरंटाईन निर्देशों का पालन करें तथा घर पर सुरक्षित रहें।</string>
+
+    <string name="api_key">AIzaSyDaHTvZ0yO-UpRUwROOztNgf0xBdiM4WOw</string>
+
+    <string name="action_edit_profile">प्रोफाइल अद्यतित करें</string>
+    <string name="action_change_password">Change Password</string>
+    <string name="action_logout">लॉगआउट</string>
+    <string name="action_update">अद्यतित करें</string>
+    <string name="action_take_from_camera">कैमरे से फोटो लें</string>
+    <string name="action_choose_from_gallery">गैलरी से चुनें</string>
+    <string name="title_add_document">विकल्प चुनें</string>
+    <string name="hint_select_picture">Select Picture</string>
+    <string name="error_choose_another_file">Sorry! We are facing some issues with this file format. Please select another file.</string>
+    <string name="msg_otp_verified">ओटीपी सत्यापित हो गया है एवं आपके पंजीकृत मोबाइल नंबर पर आपका पासवर्ड भेज दिया गया है।</string>
+</resources>

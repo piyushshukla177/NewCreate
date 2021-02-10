@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DashboardCardViewStyle"
+        app:cardUseCompatPadding="false"
+        app:cardPreventCornerOverlap="false"
+        android:layout_margin="0.5dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/serviceImageView"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ser_1"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/serviceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Home"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black_700"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/_11sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
+

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="dashboardActivity"
+            type="com.otpl.newcreate.ui.DashboardActivity" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:background="@color/background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/slier"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView"
+                style="@style/CardViewDashboardWhite"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/CardViewDashboard"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_135sdp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:layout_marginRight="@dimen/_4sdp"
+                            android:layout_gravity="center"
+                            android:onClick="@{dashboardActivity::onClickSkills}">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_7sdp"
+                                android:gravity="center"
+                                android:background="@drawable/gradient_bg_for_skills"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    app:srcCompat="@drawable/ic_solution_dashboard"
+                                    android:layout_gravity="center"
+                                    tools:ignore="VectorDrawableCompat" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:text="@string/menu_skills"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:layout_marginTop="@dimen/_14sdp"
+                                    android:layout_gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/CardViewDashboard"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_135sdp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:onClick="@{dashboardActivity::onClickForSkill}">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_7sdp"
+                                android:gravity="center"
+                                android:background="@drawable/gradient_bg_services"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    app:srcCompat="@drawable/ic_setting_dasboard"
+                                    android:layout_gravity="center"
+                                    tools:ignore="VectorDrawableCompat" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:text="@string/menu_for_skills"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/_14sdp"
+                                    android:layout_gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginBottom="@dimen/_14sdp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/CardViewDashboard"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_135sdp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:layout_gravity="center"
+                            android:onClick="@{dashboardActivity::onClickVideos}">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_7sdp"
+                                android:gravity="center"
+                                android:background="@drawable/gradient_bg_videos"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    app:srcCompat="@drawable/ic_youtube_dashboard"
+                                    android:layout_gravity="center"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:text="@string/menu_videos"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:layout_marginTop="@dimen/_14sdp"
+                                    android:layout_gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/CardViewDashboard"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_135sdp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:onClick="@{dashboardActivity::onClickServices}">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_7sdp"
+                                android:gravity="center"
+                                android:background="@drawable/gradient_bg_skills"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    app:srcCompat="@drawable/ic_government_dashboard"
+                                    android:layout_gravity="center"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:text="@string/menu_services"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/_14sdp"
+                                    android:layout_gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="@dimen/_170sdp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
